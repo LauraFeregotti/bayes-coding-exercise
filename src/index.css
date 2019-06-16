@@ -11,3 +11,57 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.mainTitle {
+  padding: 35px;
+}
+
+.ListofTournaments {
+  background-color: grey;
+}
+.Tournaments {
+  padding: 25px;
+  background-color: rgb(99, 207, 189);
+}
+
+.ListofTournaments h3 {
+  padding: 12px;
+}
+
+.filters h3 {
+  padding: 12px;
+}
+
+/*.nameFilters{
+  padding-top: 24px;
+  text-align: left;
+  padding-left: 26px;
+}*/
+.buttons button {
+  margin: 24px;
+}
+
+
+
+.Tournaments h1 {
+  padding-bottom: 25px;
+}
+
+.IndividualTournament{
+  padding: 25px;
+  background-color: grey;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+.containertournamentfound{
+  margin-top: 12px;
+  background-color: black;
+  padding: 35px;
+}
+.filters{
+  margin-left: 12px;
+ 
+}
+.filterscontainer button{
+  background-color: black;
+}
