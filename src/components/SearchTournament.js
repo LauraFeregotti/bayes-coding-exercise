@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -7,7 +7,15 @@ import TournamentFound from "./TournamentFound";
 
 function SearchTournament() {
   return (
-    <Col lg={7} className="filters">
+    <Col lg={{ offset: 1 ,span: 10}} className="filters">
+      <Row className="Tournaments">
+        <Col lg={2} />
+        <Col lg={7}>
+          <h1>Tournaments</h1>
+        </Col>
+        <Col lg={3} />
+      </Row>
+
       <Row>
         <Filter />
       </Row>

@@ -1,51 +1,39 @@
-import React, { Component } from "react";
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Data from "../data/tournaments.json";
+import Videogame from "../images/fortnite.jpg";
 
-function TournamentFound() {
+const TournamentFound = () => {
   return (
     <Container fluid className="containertournamentfound">
-      <Row className ="IndividualTournament">
-        <Col lg={6}>
-          <img src="" alt="" />
-        </Col>
-        <Col lg={6}>
-          <Row>
-            <h5>Tournament: Fortnite World Cup</h5>
-          </Row>
-          <Row>
-            <h5>Series: Warriors Series 2019</h5>
-          </Row>
-          <Row>
-            <h5>Date start: 2019-01-01</h5>
-          </Row>
-          <Row>
-            <h5>Date End: 2019-04-30</h5>
-          </Row>
-        </Col>
-      </Row>
-      <Row className ="IndividualTournament">
-        <Col lg={6}>
-          <img src="" alt="" />
-        </Col>
-        <Col lg={6}>
-          <Row>
-            <h5>Tournament: King Pro League</h5>
-          </Row>
-          <Row>
-            <h5>Series: Warriors Series 2019</h5>
-          </Row>
-          <Row>
-            <h5>Date start: 2019-01-01</h5>
-          </Row>
-          <Row>
-            <h5>Date End: 2019-04-30</h5>
-          </Row>
-        </Col>
-      </Row>
+      {Data.map((element, index) => {
+        return (
+          <Col
+            /*lg= {{ span: 10, offset: 1 }}*/ className="IndividualTournament">
+            <Col lg={6}>
+              <img src={Videogame} alt="" width="500" height="281" />
+            </Col>
+            <Col lg={6}>
+              <Row key={element.id}>
+                <h5>{element.name}</h5>
+              </Row>
+              <Row key={element.id}>
+                <h5>{element.series.name}</h5>
+              </Row>
+              <Row key={element.id}>
+                <h5>{element.series.date_start}</h5>
+              </Row>
+              <Row key={element.id}>
+                <h5>{element.series.date_end}</h5>
+              </Row>
+            </Col>
+          </Col>
+        );
+      })}
     </Container>
   );
-}
+};
 
 export default TournamentFound;

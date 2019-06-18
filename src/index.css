@@ -40,9 +40,6 @@ code {
 .buttons button {
   margin: 24px;
 }
-
-
-
 .Tournaments h1 {
   padding-bottom: 25px;
 }
@@ -58,10 +55,17 @@ code {
   background-color: black;
   padding: 35px;
 }
-.filters{
-  margin-left: 12px;
- 
-}
+
 .filterscontainer button{
+  background-color: black;
+}
+.App{
+  padding: 0px;
+  background-color: rgb(99, 207, 189);
+}
+.filters{
+  
+}
+.CarouselBayes{
   background-color: black;
 }
