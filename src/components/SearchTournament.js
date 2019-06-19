@@ -10,10 +10,11 @@ function SearchTournament() {
     <Col lg={{ offset: 1 ,span: 10}} className="filters">
       <Row className="Tournaments">
         <Col lg={2} />
-        <Col lg={7}>
+        <Col lg={8}>
           <h1>Tournaments</h1>
+         
         </Col>
-        <Col lg={3} />
+        <Col lg={2} />
       </Row>
 
       <Row>

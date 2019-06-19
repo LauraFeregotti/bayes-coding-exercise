@@ -41,18 +41,20 @@ code {
   margin: 24px;
 }
 .Tournaments h1 {
-  padding-bottom: 25px;
+  padding-bottom: 35px;
+  padding-top: 25px;
+
 }
 
 .IndividualTournament{
   padding: 25px;
-  background-color: grey;
+  background-color: black;
   margin-top: 11px;
   margin-bottom: 11px;
 }
 .containertournamentfound{
   margin-top: 12px;
-  background-color: black;
+  background-color: grey;
   padding: 35px;
 }
 
@@ -63,9 +65,11 @@ code {
   padding: 0px;
   background-color: rgb(99, 207, 189);
 }
-.filters{
-  
-}
+
 .CarouselBayes{
   background-color: black;
+}
+.tournamentDescription{
+  padding: 22px;
+  color: white;
 }

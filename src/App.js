@@ -6,11 +6,35 @@ import NavBarBayes from "./components/NavBarBayes";
 import CarouselBayes from "./components/CarouselBayes";
 import { BrowserRouter, Route } from "react-router-dom";
 import Data from "./data/tournaments.json";
+
+
 class App extends Component {
-  state = {};
+  state = {
+    tournaments: []
+  };
+
+  getData = ()=>{
+    Data.map((element, index) => {
+      return this.setState({
+        tournaments: 
+          <tr key={element.id}>
+            <th>{element.name}</th>
+            <th>{element.date_start}</th>
+            <th>{element.date_end}</th>
+          </tr>
+        
+      });
+    });
+  }
+
   render() {
+    /*console.log(getData);*/
+    const { listOfTournaments } = this.state;
+    console.log(listOfTournaments);
+
     return (
       <Container fluid className="App">
+        {listOfTournaments}
         {/*Linking the NavbarBayes parent*/}
         <NavBarBayes />
         {/*Linking the CarouselBayes parent*/}
@@ -23,3 +47,5 @@ class App extends Component {
 }
 
 export default App;
+
+
