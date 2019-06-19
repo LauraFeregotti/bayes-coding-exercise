@@ -11,13 +11,13 @@ const ListofTournaments = () => {
       <h3>List of Tournaments</h3>
       <Table striped bordered hover variant="dark" responsive>
         <tbody>
-         {/* {Data.map((element, index) => {
+          {/* {Data.map((element, index) => {
             return (
               <tr key={element.id}>
                 <th>{element.name}</th>
               </tr>
             );
-          })}  */ }
+          })}  */}
         </tbody>
       </Table>
     </Col>

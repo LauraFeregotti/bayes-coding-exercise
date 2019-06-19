@@ -5,10 +5,9 @@ import Col from "react-bootstrap/Col";
 import ButtonToolbar from "react-bootstrap/ButtonToolbar";
 import Button from "react-bootstrap/Button";
 
-
-const Filter = () =>{
-  return(
-     <Container fluid>
+const Filter = () => {
+  return (
+    <Container fluid>
       <Row className="filterscontainer">
         <Col lg={2}>
           <Row>
@@ -36,8 +35,7 @@ const Filter = () =>{
         </Col>
       </Row>
     </Container>
-  )
-}
-
+  );
+};
 
 export default Filter;

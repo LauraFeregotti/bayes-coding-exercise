@@ -19,6 +19,7 @@ code {
 .ListofTournaments {
   background-color: grey;
 }
+
 .Tournaments {
   padding: 25px;
   background-color: rgb(99, 207, 189);
@@ -32,44 +33,43 @@ code {
   padding: 12px;
 }
 
-/*.nameFilters{
-  padding-top: 24px;
-  text-align: left;
-  padding-left: 26px;
-}*/
 .buttons button {
   margin: 24px;
 }
+
 .Tournaments h1 {
   padding-bottom: 35px;
   padding-top: 25px;
 
 }
 
-.IndividualTournament{
+.IndividualTournament {
   padding: 25px;
   background-color: black;
   margin-top: 11px;
   margin-bottom: 11px;
 }
-.containertournamentfound{
+
+.containertournamentfound {
   margin-top: 12px;
   background-color: grey;
   padding: 35px;
 }
 
-.filterscontainer button{
+.filterscontainer button {
   background-color: black;
 }
-.App{
+
+.App {
   padding: 0px;
   background-color: rgb(99, 207, 189);
 }
 
-.CarouselBayes{
+.CarouselBayes {
   background-color: black;
 }
-.tournamentDescription{
+
+.tournamentDescription {
   padding: 22px;
   color: white;
 }
