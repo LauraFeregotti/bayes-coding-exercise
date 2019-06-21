@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import Filter from "./Filter";
 import TournamentFound from "./TournamentFound";
 
-function SearchTournament() {
+function SearchTournament(props) {
   return (
     <Col lg={{ offset: 1, span: 10 }} className="filters">
       <Row className="Tournaments">
@@ -18,8 +18,12 @@ function SearchTournament() {
       <Row>
         <Filter />
       </Row>
-      <Row>
-        <TournamentFound />
+      <Row className="containertournamentfound">
+        {props.tournaments.map(tournament => {
+          return (
+            <TournamentFound tournament={tournament} key={tournament.id} />
+          );
+        })}
       </Row>
     </Col>
   );
