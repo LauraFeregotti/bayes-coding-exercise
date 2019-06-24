@@ -16,7 +16,7 @@ function SearchTournament(props) {
         <Col lg={2} />
       </Row>
       <Row>
-        <Filter />
+        <Filter tournaments={props.tournaments} />
       </Row>
       <Row className="containertournamentfound">
         {props.tournaments.map(tournament => {

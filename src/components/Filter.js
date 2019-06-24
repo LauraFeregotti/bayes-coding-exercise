@@ -4,8 +4,12 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ButtonToolbar from "react-bootstrap/ButtonToolbar";
 import Button from "react-bootstrap/Button";
+import Dropdown from "react-bootstrap/Dropdown";
+import TournamentFound from "./TournamentFound";
+import Tournaments from "./Tournaments";
 
-const Filter = () => {
+const Filter = props => {
+  let unique = [...new Set(props.tournaments)];
   return (
     <Container fluid>
       <Row className="filterscontainer">
@@ -14,7 +18,20 @@ const Filter = () => {
             <h5>Series</h5>
           </Row>
           <Row>
-            <Button type="submit">selected serie</Button>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Select serie
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                {unique.map(tournament => {
+                  return (
+                    <Dropdown.Item href="#/action-1" key={tournament.id}>
+                      {tournament.series.name}
+                    </Dropdown.Item>
+                  );
+                })}
+              </Dropdown.Menu>
+            </Dropdown>
           </Row>
         </Col>
         <Col lg={2}>
