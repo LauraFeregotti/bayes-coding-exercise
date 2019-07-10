@@ -3,7 +3,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Filter from "./Filter";
-import TournamentFound from "./TournamentFound";
 
 function SearchTournament(props) {
   return (
@@ -18,13 +17,7 @@ function SearchTournament(props) {
       <Row>
         <Filter tournaments={props.tournaments} />
       </Row>
-      <Row className="containertournamentfound">
-        {props.tournaments.map(tournament => {
-          return (
-            <TournamentFound tournament={tournament} key={tournament.id} />
-          );
-        })}
-      </Row>
+      
     </Col>
   );
 }
