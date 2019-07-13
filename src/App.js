@@ -12,7 +12,7 @@ class App extends Component {
     tournaments: []
   };
 
-  componentDidMount() {
+  /*componentDidMount() {
     let Dat = Data.map((element, index) => {
       return element;
     });
@@ -20,7 +20,7 @@ class App extends Component {
       tournaments: Dat
     });
   }
-
+*/
   render() {
     /*const { tournaments } = this.state;
  const tournamentlist = tournaments.length ? (
@@ -41,7 +41,7 @@ class App extends Component {
         {/*Linking the CarouselBayes parent*/}
         <CarouselBayes />
         {/*Linking the Tournament parent */}
-        <SearchTournament tournaments={this.state.tournaments} />
+        <SearchTournament />
       </Container>
     );
   }
